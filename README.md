@@ -1,5 +1,5 @@
 
-<h1>Intracranial Aneurysm Detection</h1>
+<h1>Intracranial Aneurysm Detection (RSNA Kaggle Competition 2025)</h1>
 <br>
 <ins>Description</ins>: In this project, I present a 5-fold EfficientNetV2 ensemble to detect and precisely locate intracranial aneurysms across various types of medical images, including CTA, MRA, and T1 post-contrast and T2-weighted MRI. I begin by loading in DICOM images from the dataset and extracting the aneurysm position information from slices of each image. After applying windowing and statistical normalization, I obtain windowing parameters based on the modality (CT - Computed Tomography, MR - Magnetic Resonance) with a fallback strategy for unexpected or unlabeled series. I then extracted 2D pixel array from DICOM and apply preprocessing (for 2D DICOM series). I subsequently processed DICOM series and returned it as a NumPy array, which enabled me to train and perform inference with my 5-fold EfficientNetV2 ensemble for precise aneurysm localization.
 
